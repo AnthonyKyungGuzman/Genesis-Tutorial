@@ -1,0 +1,10 @@
+[project]
+name = "genesis-tutorial"
+version = "0.1.0"
+description = "Tutorial para utilizar Genesis"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "genesis-world>=0.4.4",
+    "torch>=2.11.0",
+]
