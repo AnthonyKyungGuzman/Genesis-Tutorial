@@ -2,7 +2,7 @@
 
 ## Estructura del Proyecto
 
-'''text
+'''
 Genesis-Tutorial/
 ├─ src/
 │  ├─ 1_hello_genesis.py
