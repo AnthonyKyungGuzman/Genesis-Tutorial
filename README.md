@@ -49,7 +49,7 @@ source .venv/bin/activate
 ## Ejecución de programas del tutorial
 
 Para ejecutar cualquier ejemplo.
-En la linea de comando se ejecuta el siguuiente comando:
+En la linea de comando se ejecuta el siguiente comando:
 ```
 python src/[####].py
 ```
