@@ -118,7 +118,17 @@ def main():
                 gs.logger.warning(f"Unrecognized raycaster pattern: {args.pattern}. Using 'spherical' instead.")
             pattern_cfg = gs.sensors.SphericalPattern()
 
-        sensor = scene.add_sensor(gs.sensors.Lidar(pattern=pattern_cfg, **sensor_kwargs))
+        sensor = scene.add_sensor(gs.sensors.Lidar(
+                                  pattern=pattern_cfg, 
+                                  **sensor_kwargs))
+        
+    scene.viewer.add_plugin(
+        gs.vis.viewer_plugins.MouseInteractionPlugin(
+            use_force=False,  # False = set position, True = spring force
+            spring_const=1000.0,
+            color=(0.1, 0.6, 0.8, 0.6),
+        )
+    )
 
     scene.build(n_envs=args.n_envs)
 
@@ -171,6 +181,8 @@ def main():
         Keybind("quit", Key.Q, KeyAction.RELEASE, callback=quit),
         overwrite=True,
     )
+
+    
 
     # Print controls
     print("Keyboard Controls:")

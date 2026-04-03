@@ -6,7 +6,26 @@
 Genesis-Tutorial/
 ├─ src/
 │  ├─ 1_hello_genesis.py
+│  ├─ 2_camera_genesis.py
+│  ├─ 3_control_robot.py
+│  ├─ 4_parallel_sim.py
+│  ├─ 5_ik_path_planning.py
+│  ├─ 6_1_ik_multiple_ee.py
+│  ├─ 6_2_ik_parallel_sim.py
+│  ├─ 7_1_sph.py
+│  ├─ 7_2_mpm.py
+│  ├─ 7_3_pbd.py
+│  ├─ 8_1_imu.py
+│  ├─ 8_2_lidar.py
+│  ├─ 9_terrain.py
+│  ├─ 10_soft.py
+│  ├─ 11_plugin.py
+│  ├─ locomotion/
+│       ├─ go2_env.py
+│       ├─ go2_eval.py
+│       ├─ go2_train.py
 ├─ pyproject.toml     # Dependencias del proyecto
+├─ Genesis_Tutorial.pdf
 └─ README.md
 ```
 
